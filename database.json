@@ -1,0 +1,384 @@
+{
+  "users": {
+    "administrators": [
+      {
+        "id": "admin1",
+        "name": "Dr. Sharif",
+        "email": "sharif.doctor@nsambyahospital.com",
+        "role": "admin",
+        "specialization": "Program Administrator",
+        "password": "admin123"
+      },
+      {
+        "id": "admin2",
+        "name": "Peter Gyagenda",
+        "email": "peter.gyagenda@nsambyahospital.com",
+        "role": "admin",
+        "specialization": "Database Engineer",
+        "password": "admin123"
+      }
+    ],
+    "doctors": [
+      {
+        "id": "d1",
+        "name": "Dr. Sharif",
+        "email": "sharif.doctor@nsambyahospital.com",
+        "password": "admin123",
+        "specialization": "Cardiologist",
+        "schedule": "Mon-Fri, 9:00 AM - 5:00 PM"
+      },
+      {
+        "id": "d2",
+        "name": "Dr. Sarah Namukasa",
+        "email": "sarah.namukasa@nsambyahospital.com",
+        "password": "doc123",
+        "specialization": "Pediatrician",
+        "schedule": "Mon-Sat, 8:00 AM - 4:00 PM"
+      }
+    ],
+    "staff": [
+      {
+        "id": "staff1",
+        "name": "Paul Kalanda",
+        "email": "paul.kalanda@nsambyahospital.com",
+        "role": "analyst",
+        "specialization": "System Analyst",
+        "password": "staff123"
+      },
+      {
+        "id": "staff2",
+        "name": "Sulait Bwambale",
+        "email": "sulait.bwambale@nsambyahospital.com",
+        "role": "datacollector",
+        "specialization": "Data Collector",
+        "password": "staff123"
+      },
+      {
+        "id": "staff3",
+        "name": "Peter Bwebale",
+        "email": "peter.bwebale@nsambyahospital.com",
+        "role": "financial",
+        "specialization": "Financial Advisor",
+        "password": "staff123"
+      },
+      {
+        "id": "staff4",
+        "name": "Peck",
+        "email": "peck.designer@nsambyahospital.com",
+        "role": "designer",
+        "specialization": "Graphic Designer",
+        "password": "staff123"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "serv1",
+      "name": "Emergency Care",
+      "description": "24/7 emergency medical services",
+      "availability": "24/7"
+    },
+    {
+      "id": "serv2",
+      "name": "Pediatrics",
+      "description": "Comprehensive child healthcare",
+      "availability": "Mon-Fri, 8:00 AM - 5:00 PM"
+    },
+    {
+      "id": "serv3",
+      "name": "Cardiology",
+      "description": "Heart and cardiovascular care",
+      "availability": "Mon-Fri, 8:00 AM - 4:00 PM"
+    },
+    {
+      "id": "serv4",
+      "name": "Laboratory Services",
+      "description": "Comprehensive medical testing",
+      "availability": "24/7"
+    },
+    {
+      "id": "serv5",
+      "name": "Pharmacy",
+      "description": "In-house pharmacy services",
+      "availability": "24/7"
+    }
+  ],
+  "medicines": [
+    {
+      "id": "m1",
+      "name": "Paracetamol",
+      "category": "Pain Relief",
+      "stock": 500,
+      "treats": ["Fever", "Headache", "Body Pain"]
+    },
+    {
+      "id": "m2",
+      "name": "Amoxicillin",
+      "category": "Antibiotics",
+      "stock": 200,
+      "treats": ["Bacterial Infections", "Chest Infections", "Pneumonia"]
+    },
+    {
+      "id": "m3",
+      "name": "Metformin",
+      "category": "Diabetes",
+      "stock": 300,
+      "treats": ["Type 2 Diabetes"]
+    },
+    {
+      "id": "med4",
+      "name": "Lisinopril",
+      "category": "Cardiovascular",
+      "stock": 600,
+      "treats": ["High Blood Pressure", "Heart Failure"]
+    },
+    {
+      "id": "med5",
+      "name": "Omeprazole",
+      "category": "Gastrointestinal",
+      "stock": 750,
+      "treats": ["Acid Reflux", "Ulcers"]
+    },
+    {
+      "id": "med6",
+      "name": "Sertraline",
+      "category": "Mental Health",
+      "stock": 400,
+      "treats": ["Depression", "Anxiety"]
+    },
+    {
+      "id": "med7",
+      "name": "Salbutamol",
+      "category": "Respiratory",
+      "stock": 300,
+      "treats": ["Asthma", "COPD"]
+    },
+    {
+      "id": "med8",
+      "name": "Ibuprofen",
+      "category": "Pain Relief",
+      "stock": 900,
+      "treats": ["Pain", "Inflammation", "Fever"]
+    },
+    {
+      "id": "med9",
+      "name": "Cetirizine",
+      "category": "Allergy",
+      "stock": 600,
+      "treats": ["Allergies", "Hay Fever"]
+    },
+    {
+      "id": "med10",
+      "name": "Metronidazole",
+      "category": "Antibiotics",
+      "stock": 400,
+      "treats": ["Bacterial Infections", "Parasitic Infections"]
+    }
+  ],
+  "diseases": [
+    {
+      "id": "dis1",
+      "name": "Malaria",
+      "category": "Infectious Disease",
+      "symptoms": ["Fever", "Chills", "Headache", "Fatigue"],
+      "recommendedMedicines": ["Artemether", "Lumefantrine"]
+    },
+    {
+      "id": "dis2",
+      "name": "Tuberculosis",
+      "category": "Respiratory Disease",
+      "symptoms": ["Persistent Cough", "Chest Pain", "Weight Loss"],
+      "recommendedMedicines": ["Isoniazid", "Rifampicin"]
+    },
+    {
+      "id": "dis3",
+      "name": "Diabetes Type 2",
+      "category": "Metabolic Disease",
+      "symptoms": ["Increased Thirst", "Frequent Urination", "Fatigue"],
+      "recommendedMedicines": ["Metformin", "Glibenclamide"]
+    },
+    {
+      "id": "dis4",
+      "name": "Hypertension",
+      "category": "Cardiovascular Disease",
+      "symptoms": ["High Blood Pressure", "Headache", "Shortness of Breath"],
+      "recommendedMedicines": ["Lisinopril", "Amlodipine"]
+    }
+  ],
+  "hospital_info": {
+    "name": "Nsambya Hospital",
+    "address": "Nsambya Hill, Kampala, Uganda",
+    "phone": "+256-414-567890",
+    "email": "info@nsambyahospital.com",
+    "emergency": "+256-414-911",
+    "working_hours": "24/7 for Emergency Services"
+  },
+  "development_team": [
+    {
+      "name": "Peter Gyagenda",
+      "role": "Database Engineer",
+      "email": "peter.gyagenda@nsambyahospital.com",
+      "phone": "+256-700-123456"
+    },
+    {
+      "name": "Paul Kalanda",
+      "role": "System Analyst",
+      "email": "paul.kalanda@nsambyahospital.com",
+      "phone": "+256-700-234567"
+    },
+    {
+      "name": "Sulait Bwambale",
+      "role": "Data Collector",
+      "email": "sulait.bwambale@nsambyahospital.com",
+      "phone": "+256-700-345678"
+    },
+    {
+      "name": "Dr. Sharif",
+      "role": "Program Administrator",
+      "email": "sharif.doctor@nsambyahospital.com",
+      "phone": "+256-700-456789"
+    },
+    {
+      "name": "Peter Bwebale",
+      "role": "Financial Advisor",
+      "email": "peter.bwebale@nsambyahospital.com",
+      "phone": "+256-700-567890"
+    },
+    {
+      "name": "Peck",
+      "role": "Graphic Designer",
+      "email": "peck.designer@nsambyahospital.com",
+      "phone": "+256-700-678901"
+    }
+  ],
+  "patients": [
+    {
+      "id": "p1",
+      "name": "John Smith",
+      "email": "john.smith@email.com",
+      "age": 35,
+      "gender": "male",
+      "phone": "+256-701-234567",
+      "address": "123 Main St, Kampala",
+      "medicalHistory": ["Hypertension", "Diabetes"],
+      "lastVisit": "2024-02-15"
+    },
+    {
+      "id": "p2",
+      "name": "Mary Johnson",
+      "email": "mary.j@email.com",
+      "age": 28,
+      "gender": "female",
+      "phone": "+256-702-345678",
+      "address": "456 Park Ave, Entebbe",
+      "medicalHistory": ["Asthma"],
+      "lastVisit": "2024-02-20"
+    },
+    {
+      "id": "p3",
+      "name": "David Mukasa",
+      "email": "david.m@email.com",
+      "age": 45,
+      "gender": "male",
+      "phone": "+256-703-456789",
+      "address": "789 Lake Rd, Jinja",
+      "medicalHistory": ["Arthritis"],
+      "lastVisit": "2024-02-18"
+    },
+    {
+      "id": "p4",
+      "name": "Sarah Nakato",
+      "email": "sarah.n@email.com",
+      "age": 32,
+      "gender": "female",
+      "phone": "+256-704-567890",
+      "address": "321 Hill St, Kampala",
+      "medicalHistory": ["Migraine"],
+      "lastVisit": "2024-02-22"
+    },
+    {
+      "id": "p5",
+      "name": "Michael Opio",
+      "email": "michael.o@email.com",
+      "age": 50,
+      "gender": "male",
+      "phone": "+256-705-678901",
+      "address": "654 Valley Rd, Mbale",
+      "medicalHistory": ["High Cholesterol"],
+      "lastVisit": "2024-02-19"
+    },
+    {
+      "id": "p6",
+      "name": "Grace Atim",
+      "email": "grace.a@email.com",
+      "age": 29,
+      "gender": "female",
+      "phone": "+256-706-789012",
+      "address": "987 River Rd, Gulu",
+      "medicalHistory": ["Allergies"],
+      "lastVisit": "2024-02-21"
+    },
+    {
+      "id": "p7",
+      "name": "Peter Okello",
+      "email": "peter.o@email.com",
+      "age": 42,
+      "gender": "male",
+      "phone": "+256-707-890123",
+      "address": "147 Market St, Kampala",
+      "medicalHistory": ["Back Pain"],
+      "lastVisit": "2024-02-17"
+    },
+    {
+      "id": "p8",
+      "name": "Janet Namuli",
+      "email": "janet.n@email.com",
+      "age": 38,
+      "gender": "female",
+      "phone": "+256-708-901234",
+      "address": "258 Church Rd, Entebbe",
+      "medicalHistory": ["Thyroid Issues"],
+      "lastVisit": "2024-02-23"
+    },
+    {
+      "id": "p9",
+      "name": "Robert Kato",
+      "email": "robert.k@email.com",
+      "age": 55,
+      "gender": "male",
+      "phone": "+256-709-012345",
+      "address": "369 School Ln, Jinja",
+      "medicalHistory": ["Heart Disease"],
+      "lastVisit": "2024-02-16"
+    },
+    {
+      "id": "p10",
+      "name": "Alice Namutebi",
+      "email": "alice.n@email.com",
+      "age": 31,
+      "gender": "female",
+      "phone": "+256-710-123456",
+      "address": "741 Garden St, Kampala",
+      "medicalHistory": ["Anxiety"],
+      "lastVisit": "2024-02-24"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "a1",
+      "patientId": "p1",
+      "doctorId": "d1",
+      "date": "2024-03-15",
+      "time": "10:00 AM",
+      "status": "scheduled"
+    },
+    {
+      "id": "a2",
+      "patientId": "p2",
+      "doctorId": "d2",
+      "date": "2024-03-16",
+      "time": "2:30 PM",
+      "status": "scheduled"
+    }
+  ]
+} 

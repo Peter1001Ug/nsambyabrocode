@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Nsambya Hospital</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>Nsambya Hospital</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#dashboard"><span class="material-icons">dashboard</span>Dashboard</a></li>
+            <li><a href="#patients"><span class="material-icons">people</span>Patients</a></li>
+            <li><a href="#doctors"><span class="material-icons">medical_services</span>Doctors</a></li>
+            <li><a href="#services"><span class="material-icons">local_hospital</span>Services</a></li>
+            <li><a href="#medicines"><span class="material-icons">medication</span>Medicines</a></li>
+            <li><a href="#appointments"><span class="material-icons">event</span>Appointments</a></li>
+            <li><a href="#reports"><span class="material-icons">analytics</span>Reports</a></li>
+        </ul>
+        <div class="user-info">
+            <span class="material-icons">account_circle</span>
+            <span id="user-name">Loading...</span>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="search-bar">
+                <span class="material-icons">search</span>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="header-actions">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round">
+                            <span class="material-icons light-icon">light_mode</span>
+                            <span class="material-icons dark-icon">dark_mode</span>
+                        </div>
+                    </label>
+                </div>
+                <span class="material-icons">notifications</span>
+                <span class="material-icons">settings</span>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <section id="quick-stats">
+                <div class="stat-card">
+                    <span class="material-icons">people</span>
+                    <h3>Total Patients</h3>
+                    <p id="patient-count">0</p>
+                </div>
+                <div class="stat-card">
+                    <span class="material-icons">medical_services</span>
+                    <h3>Doctors</h3>
+                    <p id="doctor-count">0</p>
+                </div>
+                <div class="stat-card">
+                    <span class="material-icons">event</span>
+                    <h3>Appointments</h3>
+                    <p id="appointment-count">0</p>
+                </div>
+                <div class="stat-card">
+                    <span class="material-icons">medication</span>
+                    <h3>Medicines</h3>
+                    <p id="medicine-count">0</p>
+                </div>
+            </section>
+
+            <section id="patients" class="dashboard-section">
+                <div class="section-header">
+                    <h2>Patients</h2>
+                    <button class="add-new-btn" id="add-patient-btn">
+                        <span class="material-icons">add</span>
+                        Add New Patient
+                    </button>
+                </div>
+                <div class="patients-grid" id="patients-list">
+                    <!-- Patients will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section id="doctors" class="dashboard-section">
+                <div class="section-header">
+                    <h2>Our Doctors</h2>
+                    <button class="add-new-btn" id="add-doctor-btn">
+                        <span class="material-icons">add</span>
+                        Add New Doctor
+                    </button>
+                </div>
+                <div class="doctors-grid" id="doctors-list">
+                    <!-- Doctors will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section id="services" class="dashboard-section">
+                <h2>Our Services</h2>
+                <div class="services-grid" id="services-list">
+                    <!-- Services will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section id="medicines" class="dashboard-section">
+                <h2>Medicine Inventory</h2>
+                <div class="medicine-filters">
+                    <div class="search-medicine">
+                        <input type="text" id="medicine-search" placeholder="Search medicines...">
+                    </div>
+                    <div class="category-filter">
+                        <select id="category-filter">
+                            <option value="">All Categories</option>
+                            <option value="Pain Relief">Pain Relief</option>
+                            <option value="Antibiotics">Antibiotics</option>
+                            <option value="Diabetes">Diabetes</option>
+                            <option value="Cardiovascular">Cardiovascular</option>
+                            <option value="Respiratory">Respiratory</option>
+                            <option value="Mental Health">Mental Health</option>
+                            <option value="Gastrointestinal">Gastrointestinal</option>
+                            <option value="Allergy">Allergy</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="medicines-grid" id="medicines-list">
+                    <!-- Medicines will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section id="diseases" class="dashboard-section">
+                <h2>Common Diseases & Treatments</h2>
+                <div class="diseases-grid" id="diseases-list">
+                    <!-- Diseases will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section id="development-team" class="dashboard-section">
+                <h2>Development Team</h2>
+                <div class="team-grid" id="team-list">
+                    <!-- Team members will be loaded dynamically -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Social Media Links Section -->
+        <section id="social-media" class="dashboard-section">
+            <h2>Connect With Us</h2>
+            <div class="social-links">
+                <a href="https://facebook.com/nsambyahospital" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://instagram.com/nsambyahospital" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://twitter.com/nsambyahospital" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://wa.me/256701234567" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://tiktok.com/@nsambyahospital" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Add New Doctor Modal -->
+    <div id="add-doctor-modal" class="modal">
+        <div class="modal-content">
+            <h2>Add New Doctor</h2>
+            <form id="add-doctor-form">
+                <div class="form-group">
+                    <label for="doctor-name">Full Name</label>
+                    <input type="text" id="doctor-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-email">Email</label>
+                    <input type="email" id="doctor-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-specialization">Specialization</label>
+                    <input type="text" id="doctor-specialization" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-schedule">Schedule</label>
+                    <input type="text" id="doctor-schedule" placeholder="e.g., Mon-Fri, 9:00 AM - 5:00 PM" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-password">Password</label>
+                    <input type="password" id="doctor-password" required>
+                </div>
+                <button type="submit" class="add-new-btn">Add Doctor</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add New Patient Modal -->
+    <div id="add-patient-modal" class="modal">
+        <div class="modal-content">
+            <h2>Add New Patient</h2>
+            <form id="add-patient-form">
+                <div class="form-group">
+                    <label for="patient-name">Full Name</label>
+                    <input type="text" id="patient-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-email">Email</label>
+                    <input type="email" id="patient-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-age">Age</label>
+                    <input type="number" id="patient-age" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-gender">Gender</label>
+                    <select id="patient-gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="patient-phone">Phone Number</label>
+                    <input type="tel" id="patient-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-address">Address</label>
+                    <input type="text" id="patient-address" required>
+                </div>
+                <button type="submit" class="add-new-btn">Add Patient</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast-notification"></div>
+</body>
+</html> 
